@@ -14,7 +14,7 @@ func runTask(id int) string {
 
 func firstResponse() string {
 	numOfRunner := 10
-	ch := make(chan string)
+	ch := make(chan string, numOfRunner)
 	for i := 0; i < numOfRunner; i++ {
 		go func(i int) {
 			ret := runTask(i)
