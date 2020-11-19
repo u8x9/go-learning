@@ -23,3 +23,16 @@ reflect.ValueOf(*e).FieldByName("NAME")
 ```go
 reflect.ValueOf(e).MethodByName("NAME").Call([]reflect.Value{reflect.ValueOf(1)})
 ```
+
+## 比较切片和map (DeepEqual)
+
+`reflect.DeepEqual`
+
+## 反射应知
+
++ 提高了程序的灵活性
+
++ 降低了程序的可读性
+
++ 降低了程序的性能
+
