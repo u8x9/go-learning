@@ -36,3 +36,9 @@ reflect.ValueOf(e).MethodByName("NAME").Call([]reflect.Value{reflect.ValueOf(1)}
 
 + 降低了程序的性能
 
+## "不安全编程"的危险性
+
+```go
+i := 10
+f := *(*float64)(unsafe.Pointer(&i))
+```
