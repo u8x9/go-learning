@@ -17,3 +17,23 @@ go test -v -cover
 ### 断言
 
 [`github.com/stretchr/testify`](https://github.com/stretchr/testify)
+
+## BDD
+
+`Behavior Driver Development`
+
+### 项目
+
+[https://github.com/smartystreets/goconvey](https://github.com/smartystreets/goconvey)
+
+### 安装
+
+```bash
+go get -u github.com/smartystreets/goconvey/convey
+```
+
+### 启动 web UI
+
+```bash
+$GOPATH/bin/goconvey
+```
